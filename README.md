@@ -1,9 +1,60 @@
-Upload any csv file into the system (consider the delimiter to be a comma ‘ , ’) [If you don’t know what’s a csv, download the other file in this folder and take a look at it, then google a little more]
-Display a list of all uploaded csv files
-When the user selects a file, display all the data (with column headers) in a table on the page (front end)
-There should be a search box which searches on the front end itself and displays the matching rows of the table only (empty search box displays all the data). (you can put a search on any one column)
-DIFFERENT CSV FILES WITH DIFFERENT COLUMN HEADERS CAN BE UPLOADED, YOUR TABLE HEADERS SHOULD BE DYNAMIC
-[EXTRA POINTS] Sorting button (ascending and descending) for each column on the front end
-[EXTRA POINTS] Put a validation on the front end and server side on being able to upload only csv type of files
-[SUPER EXTRA POINTS] Pagination of the data displayed in the table to a max of 100 records per page
-[SUPER DUPER EXTRA POINTS] Integrate a charting library like google charts/d3.js/etc to display a selected column
+# CSV File Upload Project
+
+This project allows users to upload CSV files, search data within the files, and display the results in a table format on the web interface. It also provides features like client-side searching, dynamic table population, and error handling.
+
+## Table of Contents
+
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Usage](#usage)
+
+## Features
+
+- **File Upload**: Users can upload CSV files using a file input form.
+- **Search Functionality**: Users can search for specific terms within a chosen column of the CSV data.
+- **Client-Side Searching**: The application allows users to search and filter data on the client-side without reloading the page.
+- **Dynamic Table Population**: The table dynamically updates to display the search results or the original data.
+- **Error Handling**: Error messages are displayed to users for invalid file uploads or failed search requests.
+
+## Technologies Used
+
+- **Frontend**: HTML, CSS, JavaScript, jQuery, Bootstrap
+- **Backend**: Node.js, Express.js
+- **File Upload Handling**: Multer
+- **CSV Parsing**: csv-parser
+
+## Installation
+
+To run the project locally, follow these steps:
+
+1. Clone the repository to your local machine:
+
+    ```bash
+    git clone [https://github.com/lakshya1311/CSVUploadProject.git]
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd csv-file-upload-project
+    ```
+
+3. Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Usage
+
+1. Start the server:
+
+    ```bash
+    npm start
+    ```
+
+2. Open a web browser and go to `http://localhost:3000` to access the application.
+
+3. Upload a CSV file using the file input form.
+
+4. Use the search form to search for specific terms within the data.
